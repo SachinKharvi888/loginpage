@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_margin="30dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:textSize="60dp"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:layout_marginBottom="10dp"
+            />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/logi"
+                app:cardCornerRadius="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_margin="10dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:id="@+id/name"
+                    android:textSize="15dp"
+                    android:layout_margin="4dp"
+
+                    />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/logi"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="30dp"
+
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:id="@+id/email"
+                android:textSize="15dp"
+                android:layout_margin="4dp"
+
+
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="30dp"
+            android:backgroundTint="@color/logi"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:id="@+id/password"
+                android:textSize="15dp"
+                android:layout_margin="4dp"
+
+                />
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"
+            android:id="@+id/regbtn"
+            android:layout_gravity="center"
+            />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/pro"
+            android:visibility="gone"
+            />
+
+
+    </LinearLayout>
+</LinearLayout>
